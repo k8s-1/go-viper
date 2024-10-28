@@ -81,7 +81,7 @@ func initConfig() {
 	}
 
 	viper.SetEnvPrefix("cp")
-	viper.AutomaticEnv() // read in environment variables that match
+	viper.AutomaticEnv() // read in environment variables that match CP_*
 
 	// If a config file is found, read it in.
 	if err := viper.ReadInConfig(); err == nil {
