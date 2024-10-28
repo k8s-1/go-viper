@@ -24,6 +24,7 @@ to quickly create a Cobra application.`,
 		fmt.Println("config called")
 
 		fmt.Println("The log level is set to:", viper.GetString("logLevel"))
+		fmt.Println("The os is", viper.GetString("os"))
 
 	},
 }
