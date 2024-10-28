@@ -76,7 +76,7 @@ func initConfig() {
 		// Search config in current directory with name ".go-viper" (without extension).
 		viper.AddConfigPath(".")
 		viper.SetConfigType("yaml")
-		viper.SetConfigName(".go-viper")
+		viper.SetConfigName("go-viper")
 
 	}
 
