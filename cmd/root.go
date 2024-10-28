@@ -70,11 +70,11 @@ func initConfig() {
 		viper.SetConfigFile(cfgFile)
 	} else {
 		// Find home directory.
-		home, err := os.UserHomeDir()
-		cobra.CheckErr(err)
+		// home, err := os.UserHomeDir()
+		// cobra.CheckErr(err)
 
-		// Search config in home directory with name ".go-viper" (without extension).
-		viper.AddConfigPath(home)
+		// Search config in current directory with name ".go-viper" (without extension).
+		viper.AddConfigPath(".")
 		viper.SetConfigType("yaml")
 		viper.SetConfigName(".go-viper")
 
